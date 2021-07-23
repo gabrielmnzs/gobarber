@@ -20,10 +20,10 @@ class FakeUsersRepository implements IUsersRepository {
     return findUser;
   }
 
-  public async create(userData: ICreateUserDTO): Promise<User> {
+  public async create(data: ICreateUserDTO): Promise<User> {
     const user = new User();
 
-    Object.assign(user, { id: uuid(), userData });
+    Object.assign(user, { id: uuid(), name: data.name, email: data.email, password: data.password });
 
     this.users.push(user);
 
