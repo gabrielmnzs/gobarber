@@ -7,27 +7,31 @@ let listProviderDayAvailabilityService: ListProviderDayAvailabilityService;
 describe('ListProviderDayAvailability', () => {
   beforeEach(() => {
     fakeAppointmentsRepository = new FakeAppointmentsRepository();
+
     listProviderDayAvailabilityService = new ListProviderDayAvailabilityService(
       fakeAppointmentsRepository,
     );
-  });
-
-  it('should be able to list the day availability from provider', async () => {
-    await fakeAppointmentsRepository.create({
-      provider_id: 'user',
-      user_id: 'user',
-      date: new Date(2021, 8, 24, 14, 0, 0),
-    });
-
-    await fakeAppointmentsRepository.create({
-      provider_id: 'user',
-      user_id: 'user',
-      date: new Date(2021, 8, 24, 15, 0, 0),
-    });
 
     jest.spyOn(Date, 'now').mockImplementationOnce(() => {
       return new Date(2021, 8, 24, 11).getTime();
     });
+  });
+
+  it('should be able to list the day availability from provider', async () => {
+    const iterable = Array.from(
+      { length: 2 },
+      (_, index) => index + 14,
+    );
+
+    await Promise.all(
+      iterable.map(async hour =>
+        fakeAppointmentsRepository.create({
+          provider_id: 'user',
+          user_id: 'user',
+          date: new Date(2021, 8, 24, hour, 0, 0),
+        }),
+      ),
+    );
 
     const availability = await listProviderDayAvailabilityService.execute({
       provider_id: 'user',
