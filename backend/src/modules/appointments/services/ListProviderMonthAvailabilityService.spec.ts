@@ -21,7 +21,7 @@ describe('ListProviderMonthAvailability', () => {
     await Promise.all(
       iterable.map(async hour =>
         fakeAppointmentsRepository.create({
-          provider_id: 'user',
+          provider_id: 'provider',
           user_id: 'user',
           date: new Date(2021, 9, 20, hour, 0, 0),
         }),
@@ -29,13 +29,13 @@ describe('ListProviderMonthAvailability', () => {
     );
 
     await fakeAppointmentsRepository.create({
-      provider_id: 'user',
+      provider_id: 'provider',
       user_id: 'user',
       date: new Date(2021, 9, 21, 8, 0, 0),
     });
 
     const availability = await listProviderMonthAvailabilityService.execute({
-      provider_id: 'user',
+      provider_id: 'provider',
       month: 10,
       year: 2021,
     });
