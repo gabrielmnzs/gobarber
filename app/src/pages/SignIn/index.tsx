@@ -60,9 +60,10 @@ const SignIn: React.FC = () => {
        const errors = getValidationErrors(err);
 
        formRef.current?.setErrors(errors);
-
+       console.log(errors);
        return;
       }
+      console.log(err);
 
       Alert.alert(
         'Erro na autenticação',
