@@ -33,7 +33,7 @@ const Profile: React.FC = () => {
   const handleSubmit = useCallback(async (data: ProfileFormData) =>  {
    try{
       formRef.current?.setErrors({});
-      console.log('entrei');
+
       const schema = Yup.object().shape({
         name: Yup.string().required('Nome obrigatório'),
         email: Yup.string()
@@ -52,7 +52,7 @@ const Profile: React.FC = () => {
         })
         .oneOf([Yup.ref('password')], 'Senhas diferentes'),
       });
-      console.log(schema);
+
       await schema.validate(data, {
         abortEarly: false,
       });
