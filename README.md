@@ -2,12 +2,16 @@
   <img  alt="gobarber"  src=".github/logo.svg"  width="auto"  heigth="auto"/>
 </div>
 
+<br />
+
 <p  align="center">
   <a  href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a  href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a  href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a  href="#-license">License</a>
 </p>  
+
+<br />
 
 <div  align="center"  style="margin: 20px;">
   <img  src="https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square"  alt="License">
@@ -17,9 +21,13 @@
   <img  src="https://img.shields.io/github/stars/gabrielmnzs/gobarber?color=orange&style=flat-square"  alt="Stars">
 </div>
 
+<br />
+
 <p align="center"  style="margin: 20px;">
 GoBarber is a barber shop/beauty salon service scheduling platform. With this application, service providers can register and users can make appointments with these providers.
 </p>
+
+<br />
 
 ## 🔥 Preview
 
@@ -54,7 +62,7 @@ Clone the project
 $ git clone https://github.com/gabrielmnzs/gobarber.git
 ```
 
-### **Backend**
+### **Backend** ⚙️
 
 Import the `Insomnia.json` on Insomnia App or click on  button bellow
 
@@ -105,7 +113,7 @@ $ yarn dev:server
 # Well done, project is started!
 ```
 
-### **Frontend**
+### **Frontend** 💻
 
 **Requirements**
 
@@ -129,7 +137,7 @@ $ yarn
 $ yarn start
 ```
 
-### **App**
+### **App** 📱
 
 **Requirements**
 
@@ -160,6 +168,8 @@ $ yarn ios
 ## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+
+---
 
 <p  align="center"  style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
   Made with :purple_heart: by <strong>Gabriel Menezes</strong>
