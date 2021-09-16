@@ -20,13 +20,13 @@
 
 GoBarber is a barber shop/beauty salon service scheduling platform. With this application, service providers can register and users can make appointments with these providers.
 
-### 🔥 Preview
+## 🔥 Preview
 
 <div align="center"> 
 <img src="https://media.giphy.com/media/Lm6bmg75wR7Llcf9JG/giphy.gif" alt="preview"/>
 </div>
 
-### 🧪 Technologies
+## 🧪 Technologies
 
 This project was developed using the following technologies:
 
@@ -43,13 +43,13 @@ This project was developed using the following technologies:
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
 
-### 🚀 Getting started
+## 🚀 Getting started
 
-#### Backend
-#### Frontend
-#### App
+### Backend
+### Frontend
+### App
 
-### 📝 License
+## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
