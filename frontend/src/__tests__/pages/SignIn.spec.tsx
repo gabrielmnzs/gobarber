@@ -44,7 +44,7 @@ describe('SignIn Page', () => {
     const buttonElement = getByText('Entrar');
 
     fireEvent.change(emailField, { target: { value: 'johndoe@example.com' } });
-    fireEvent.change(passwordField, { taget: { value: '123456' } });
+    fireEvent.change(passwordField, { target: { value: '123456' } });
 
     fireEvent.click(buttonElement);
 
@@ -61,7 +61,7 @@ describe('SignIn Page', () => {
     const buttonElement = getByText('Entrar');
 
     fireEvent.change(emailField, { target: { value: 'not-valid-email' } });
-    fireEvent.change(passwordField, { taget: { value: '123456' } });
+    fireEvent.change(passwordField, { target: { value: '123456' } });
 
     fireEvent.click(buttonElement);
 
@@ -82,7 +82,7 @@ describe('SignIn Page', () => {
     const buttonElement = getByText('Entrar');
 
     fireEvent.change(emailField, { target: { value: 'johndoe@example.com' } });
-    fireEvent.change(passwordField, { taget: { value: '123456' } });
+    fireEvent.change(passwordField, { target: { value: '123456' } });
 
     fireEvent.click(buttonElement);
 
